@@ -1,0 +1,32 @@
+    1  git checkout master
+    2  pwd
+    3  grep -r "logo" .
+    4  grep -r "logo" . > files-with-logo.txt
+    5  git add files-with-logo.txt
+    6  git commit -m 'I outputted the content with logo to the files-with-logo.txt file'
+    7  git checkout -b finding-files
+    8  grep -r "logo" . > files-with-logo.txt
+    9  git add files-with-logo.txt
+   10  git push origin finding-files
+   11  git commit -m "i did the finding-files exercise"
+   12  find . -size +500k
+   13  find . -size +500k > files-over-500kb.txt
+   14  add files-over-500kb.txt
+   15  git add files-over-500kb.txt
+   16  git commit -m 'created the file for 500kb files'
+   17  git push origin finding-files
+   18  git checkout master
+   19  git checkout -b finding-content
+   20  grep -r "javascript" .
+   21  grep -r "javascript" . > files-with-javascript.txt
+   22  git add files-with-javascript.txt
+   23  git commit -m "i created the files-with-javascript.txt files"
+   24  git cd . . 
+   25  cd ..
+   26  ls -l
+   27  git clone git@github.com:johnyduval/command-line-workshop.git
+   28  ls -l
+   29  cd command-line-workshop
+   30  git status
+   31  git checkout -b cmd-history
+   32  history > history.txt
